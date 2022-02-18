@@ -1,9 +1,11 @@
-import { Controller, Get } from 'routing-controllers';
+import { Request } from 'express';
+import { Controller, Get, Req } from 'routing-controllers';
 
 @Controller()
 export class GreetingsController {
   @Get('/')
-  sayHello() {
+  sayHello(@Req() request: Request) {
+    console.log(request.query);
     return 'Hello World';
   }
 }

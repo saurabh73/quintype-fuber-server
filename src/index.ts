@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { createExpressServer } from 'routing-controllers';
 
 const port = 3000;
