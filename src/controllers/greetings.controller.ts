@@ -1,10 +1,9 @@
-import { Controller, Get } from "routing-controllers";
+import { Controller, Get } from 'routing-controllers';
 
 @Controller()
 export class GreetingsController {
-
-    @Get('/')
-    sayHello() {
-        return 'Hello World';
-    }
+  @Get('/')
+  sayHello() {
+    return 'Hello World';
+  }
 }
